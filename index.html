@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlameBite — Tezkor va Mazali Fast Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-badge">🔥</span>
+        <span>Flame<strong>Bite</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu">Menyu</a>
+        <a href="#promos">Aksiyalar</a>
+        <a href="#gallery">Galereya</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="openCartBtn" aria-label="Savatni ochish">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span>Savat</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyuni ochish">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-tag">🚀 30 daqiqada issiq yetkazib berish</span>
+        <h1>Haqiqiy olovda pishgan <span>mazali taomlar</span></h1>
+        <p>
+          Yangi uzilgan sabzavotlar, 100% halol mol va tovuq go‘shti hamda maxsus souslar bilan tayyorlangan burger, pitsa va tandir lavashlar.
+        </p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn btn-primary">Buyurtma berish</a>
+          <a href="#promos" class="btn btn-outline">Aksiyalarni ko‘rish</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <strong>15+</strong>
+            <span>Yillik tajriba</span>
+          </div>
+          <div>
+            <strong>4.9 ★</strong>
+            <span>Mijozlar bahosi</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Tezkor xizmat</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <img
+          src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=900"
+          alt="Ikki qavatli pishloqli mol go'shtli burger va kartoshka fri"
+          class="hero-img"
+          data-fallback="burger"
+        />
+        <div class="hero-badge">
+          <span class="badge-title">Xit savdo 🔥</span>
+          <span class="badge-sub">Double Flame Burger</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promos Section -->
+  <section class="promos" id="promos">
+    <div class="container">
+      <div class="section-head">
+        <h2>Maxsus <span>Aksiyalar</span></h2>
+        <p>Eng foydali kombo to‘plamlar va chegirmalardan foydalaning</p>
+      </div>
+
+      <div class="promo-grid">
+        <article class="promo-card promo-orange">
+          <div class="promo-text">
+            <span class="promo-pill">-25% Chegirma</span>
+            <h3>Do‘stlar Kombosi</h3>
+            <p>2 ta Klassik Chizburger + 2 ta o‘rta Fri + 2 ta Cola 0.5L</p>
+            <div class="promo-price">
+              <span class="old-price">96 000 so‘m</span>
+              <span class="new-price">72 000 so‘m</span>
+            </div>
+            <button class="btn btn-light add-promo-btn" data-id="101">Savatga qo‘shish</button>
+          </div>
+          <div class="promo-img-box">
+            <img
+              src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=700"
+              alt="Burger, kartoshka fri va ichimlikdan iborat kombo to'plam"
+              data-fallback="combo"
+            />
+          </div>
+        </article>
+
+        <article class="promo-card promo-dark">
+          <div class="promo-text">
+            <span class="promo-pill">Bepul yetkazish</span>
+            <h3>Oilaviy Pitsa Seti</h3>
+            <p>Katta Pepperoni pitsa (35 sm) + Tovuq qanotchalari (8 dona)</p>
+            <div class="promo-price">
+              <span class="old-price">135 000 so‘m</span>
+              <span class="new-price">109 000 so‘m</span>
+            </div>
+            <button class="btn btn-primary add-promo-btn" data-id="102">Savatga qo‘shish</button>
+          </div>
+          <div class="promo-img-box">
+            <img
+              src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&w=700"
+              alt="Issiq pishloqli pepperoni pitsa"
+              data-fallback="pizza"
+            />
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <h2>Bizning <span>Menyu</span></h2>
+        <p>Har bir taom buyurtma tushgan zahoti yangidan tayyorlanadi</p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="category-tabs" id="categoryTabs">
+        <button class="tab-btn active" data-category="all">Barchasi</button>
+        <button class="tab-btn" data-category="burger">Burgerlar</button>
+        <button class="tab-btn" data-category="pizza">Pitsalar</button>
+        <button class="tab-btn" data-category="lavash">Lavash & Hot-dog</button>
+        <button class="tab-btn" data-category="snacks">Sneklar & Fri</button>
+        <button class="tab-btn" data-category="drinks">Ichimliklar</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- JS orqali dinamik yuklanadi -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <h2>Taomlar <span>Galereyasi</span></h2>
+        <p>Oshxonamizda tayyorlangan eng sara taomlar ko‘rinishi</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/1556698/pexels-photo-1556698.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Grilda pishirilgan suvli burger"
+            data-fallback="burger"
+          />
+          <span>Gril Burgerlar</span>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Cho'ziluvchan pishloqli italyan pitsasi"
+            data-fallback="pizza"
+          />
+          <span>Issiq Pitsalar</span>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Qarsildoq lavash va shaurma"
+            data-fallback="lavash"
+          />
+          <span>Tandir Lavash</span>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Oltinrang qovurilgan kartoshka fri"
+            data-fallback="snacks"
+          />
+          <span>Qarsildoq Fri</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="logo footer-logo">
+          <span class="logo-badge">🔥</span>
+          <span>Flame<strong>Bite</strong></span>
+        </a>
+        <p class="footer-desc">
+          Toshkent bo‘ylab eng tezkor va mazali fast food yetkazib berish xizmati. Sifat va halollik kafolatlangan.
+        </p>
+      </div>
+
+      <div>
+        <h4>Ish vaqti</h4>
+        <p>Dushanba – Yakshanba: 09:00 – 03:00</p>
+        <p>Yetkazib berish: 25–35 daqiqa</p>
+      </div>
+
+      <div>
+        <h4>Aloqa markazi</h4>
+        <p>Telefon: <a href="tel:+998712000000">+998 (71) 200-00-00</a></p>
+        <p>Manzil: Toshkent sh., Amir Temur shoh ko‘chasi, 45-uy</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FlameBite Fast Food. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer Modal -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Xarid savati">
+    <div class="cart-header">
+      <h3>Sizning savatingiz</h3>
+      <button class="close-cart-btn" id="closeCartBtn" aria-label="Yopish">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- Savat elementlari -->
+    </div>
+
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total-row">
+        <span>Jami summa:</span>
+        <strong id="cartTotal">0 so‘m</strong>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Buyurtmani rasmiylashtirish</button>
+    </div>
+  </aside>
+
+  <!-- Checkout Modal -->
+  <div class="modal-backdrop" id="checkoutModal">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3>Buyurtmani tasdiqlash</h3>
+        <button class="close-modal-btn" id="closeCheckoutModal">&times;</button>
+      </div>
+      <form id="orderForm" class="order-form">
+        <div class="form-group">
+          <label for="customerName">Ismingiz</label>
+          <input type="text" id="customerName" placeholder="Masalan: Sardor" required />
+        </div>
+        <div class="form-group">
+          <label for="customerPhone">Telefon raqamingiz</label>
+          <input type="tel" id="customerPhone" placeholder="+998 90 123 45 67" required />
+        </div>
+        <div class="form-group">
+          <label for="customerAddress">Yetkazib berish manzili</label>
+          <textarea id="customerAddress" rows="2" placeholder="Tuman, ko‘cha, uy va xonadon raqami" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Buyurtma berish</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Mahsulot savatga qo‘shildi!</div>
+
+  <script src="index.js"></script>
+</body>
+</html>
